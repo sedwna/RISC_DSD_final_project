@@ -1,0 +1,474 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/priso/OneDrive/Desktop/vhdl_code/_prj/Multiplier_4_bit
+T_opt
+!s110 1721325133
+V6c6k=i_LdE<Wh`JIDE0mN3
+04 13 10 work tb_risc_v_cpu behavioral 1
+=1-7c10c9281572-6699564d-2ef-4404
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1721583528
+VV4jM0NEk4o49MohN4cmJ[0
+04 18 10 work tb_pipelined_riscv behavioral 1
+=1-7c10c9281572-669d47a7-2ed-4308
+R1
+R2
+n@_opt1
+R3
+R0
+Eex_stage
+Z4 w1721583319
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 208
+Z8 dC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project
+Z9 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
+Z10 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
+l0
+L5 1
+VJ3EWg5Eo=@HlaTD1hV]Od2
+!s100 _niB[QgClGaJ:Nlg@FGGe1
+Z11 OL;C;2020.4;71
+32
+Z12 !s110 1721586616
+!i10b 1
+Z13 !s108 1721586616.000000
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl|
+Z15 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl|
+!i113 0
+Z16 o-work work -2002 -explicit
+Z17 tExplicit 1 CvgOpt 0
+Abehavioral
+R5
+R6
+R7
+DEx4 work 8 ex_stage 0 22 J3EWg5Eo=@HlaTD1hV]Od2
+!i122 208
+l16
+L14 34
+V:?9DDkE=6H`zin^dR<>Ah2
+!s100 JFEINI=eA@^3M7UOl9Dk]2
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Eid_stage
+Z18 w1721583434
+R5
+R6
+R7
+!i122 209
+R8
+Z19 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl
+Z20 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl
+l0
+L5 1
+VYYGFBB5^gODM89lE]8f]H2
+!s100 0UEd<:gQP?C9eCdSoa>3<3
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl|
+Z22 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl|
+!i113 0
+R16
+R17
+Abehavioral
+R5
+R6
+R7
+Z23 DEx4 work 8 id_stage 0 22 YYGFBB5^gODM89lE]8f]H2
+!i122 209
+l19
+L16 18
+VLUT3jJYJJVkT>>=SZU;KQ1
+!s100 Wf8K^zVAj41n6TONNSj<b2
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 0
+R16
+R17
+Eif_stage
+Z24 w1721583470
+R5
+R6
+R7
+!i122 210
+R8
+Z25 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl
+Z26 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl
+l0
+L5 1
+Vee[zJUoY8<SGC:EgIPA`F2
+!s100 cL0RB_@5LmXECM24hlTFe0
+R11
+32
+R12
+!i10b 1
+R13
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl|
+Z28 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl|
+!i113 0
+R16
+R17
+Abehavioral
+R5
+R6
+R7
+Z29 DEx4 work 8 if_stage 0 22 ee[zJUoY8<SGC:EgIPA`F2
+!i122 210
+l16
+L12 17
+V77Pl^;Y;7f8kXSfz88fT=0
+!s100 _T@WS>OR:L@]5]A>1Ren?3
+R11
+32
+R12
+!i10b 1
+R13
+R27
+R28
+!i113 0
+R16
+R17
+Emem_stage
+Z30 w1721583510
+R5
+R6
+R7
+!i122 212
+R8
+Z31 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl
+Z32 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl
+l0
+L5 1
+VMRfJHGiHT?GkF<k:zLdD@0
+!s100 oiH[MJ=kS`HTzI>ZTP6>z3
+R11
+32
+R12
+!i10b 1
+R13
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl|
+Z34 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl|
+!i113 0
+R16
+R17
+Abehavioral
+R5
+R6
+R7
+DEx4 work 9 mem_stage 0 22 MRfJHGiHT?GkF<k:zLdD@0
+!i122 212
+l18
+L14 27
+V1B[5i_aa0J81T5G2n_U1]2
+!s100 PYdOPAY:k59hjW1e6;:DS2
+R11
+32
+R12
+!i10b 1
+R13
+R33
+R34
+!i113 0
+R16
+R17
+Epipeline_registers
+Z35 w1721582704
+Z36 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z37 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R6
+R7
+!i122 213
+R8
+Z38 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl
+Z39 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl
+l0
+L6 1
+V=8FY?E7_8gcNDMjb^EJ0j0
+!s100 =k=Kf?cCkM7ZC_bbXzHS=3
+R11
+32
+R12
+!i10b 1
+R13
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl|
+Z41 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl|
+!i113 0
+R16
+R17
+Abehavioral
+R36
+R37
+R6
+R7
+Z42 DEx4 work 18 pipeline_registers 0 22 =8FY?E7_8gcNDMjb^EJ0j0
+!i122 213
+l26
+L21 29
+VZk2ZK>0Q0zP466[;f^4LV0
+!s100 X4?Zk_eXfB?9G]QiESlB30
+R11
+32
+R12
+!i10b 1
+R13
+R40
+R41
+!i113 0
+R16
+R17
+Epipelined_riscv
+Z43 w1721586599
+R36
+R37
+R6
+R7
+!i122 211
+R8
+Z44 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
+Z45 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
+l0
+L6 1
+V9R=M[8`;>makJ@h@YGZz]3
+!s100 0kmCKc<gAke0dKNdjH?Ph2
+R11
+32
+R12
+!i10b 1
+R13
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl|
+Z47 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl|
+!i113 0
+R16
+R17
+Abehavioral
+R23
+R42
+R5
+R29
+R36
+R37
+R6
+R7
+Z48 DEx4 work 15 pipelined_riscv 0 22 9R=M[8`;>makJ@h@YGZz]3
+!i122 211
+l16
+L11 28
+VeDJ`]kX<]Oz?QJa1?=h?o3
+!s100 f^NBMZX:CM_P2UTk1jeE@0
+R11
+32
+R12
+!i10b 1
+R13
+R46
+R47
+!i113 0
+R16
+R17
+Erisc_v_cpu
+Z49 w1721324407
+R36
+R37
+R6
+R7
+!i122 92
+R8
+R44
+R45
+l0
+L6 1
+Vl^leTC@2ajeCL8cS=jnnn1
+!s100 OSA7>]bVk8SkV=SJi;K^V3
+R11
+32
+Z50 !s110 1721325124
+!i10b 1
+Z51 !s108 1721325124.000000
+R46
+R47
+!i113 0
+R16
+R17
+Abehavioral
+R36
+R37
+R6
+R7
+DEx4 work 10 risc_v_cpu 0 22 l^leTC@2ajeCL8cS=jnnn1
+!i122 92
+l53
+L11 49
+VJXAZe=B^VaSMFe[G5B@AL1
+!s100 Kmjf[gFz;6VWmj8_hAWBk1
+R11
+32
+R50
+!i10b 1
+R51
+R46
+R47
+!i113 0
+R16
+R17
+Etb_pipelined_riscv
+Z52 w1721582723
+R36
+R37
+R6
+R7
+!i122 214
+R8
+Z53 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl
+Z54 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl
+l0
+L6 1
+V0I0E;dCoVO^>88GITZ`Ab0
+!s100 i7cj;lHZi]FO99l0g@ONl1
+R11
+32
+R12
+!i10b 1
+R13
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl|
+Z56 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl|
+!i113 0
+R16
+R17
+Abehavioral
+R48
+R36
+R37
+R6
+R7
+DEx4 work 18 tb_pipelined_riscv 0 22 0I0E;dCoVO^>88GITZ`Ab0
+!i122 214
+l12
+L9 34
+Vh@<SoY>cna5lXGXZAZ?nE0
+!s100 eAPcU0oHMP71>bO8eCb^T2
+R11
+32
+R12
+!i10b 1
+R13
+R55
+R56
+!i113 0
+R16
+R17
+Etb_risc_v_cpu
+Z57 w1721325115
+R6
+R7
+!i122 94
+R8
+R53
+R54
+l0
+L4 1
+VJ>VI5hX?CecgNlP[d5NAV3
+!s100 B?8[==F1IYizn<NbY2U0b0
+R11
+32
+R50
+!i10b 1
+R51
+R55
+R56
+!i113 0
+R16
+R17
+Abehavioral
+R6
+R7
+DEx4 work 13 tb_risc_v_cpu 0 22 J>VI5hX?CecgNlP[d5NAV3
+!i122 94
+l20
+L7 44
+VnU9l:HRVZLdi^mX024eBc0
+!s100 ;Igme7eN5PTNGgBH];P^>2
+R11
+32
+R50
+!i10b 1
+R51
+R55
+R56
+!i113 0
+R16
+R17
+Ewb_stage
+Z58 w1721582639
+R36
+R37
+R6
+R7
+!i122 215
+R8
+Z59 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl
+Z60 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl
+l0
+L6 1
+VI_4OBFGAIjkGAcQADZzh61
+!s100 :c]nFYZ65ML7TDz2Db50O1
+R11
+32
+R12
+!i10b 1
+R13
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl|
+Z62 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl|
+!i113 0
+R16
+R17
+Abehavioral
+R36
+R37
+R6
+R7
+Z63 DEx4 work 8 wb_stage 0 22 I_4OBFGAIjkGAcQADZzh61
+!i122 215
+l14
+Z64 L13 4
+Z65 VA9I6VnjYj[WbRo12GMGmS0
+Z66 !s100 UoeC3FdDO^GF7<T;6^dQP3
+R11
+32
+R12
+!i10b 1
+R13
+R61
+R62
+!i113 0
+R16
+R17
