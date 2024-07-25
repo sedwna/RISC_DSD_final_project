@@ -1,40 +1,48 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL; -- Correct library for numeric operations and conversions
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
 
 entity MEM_stage is
-    Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           Addr : in  STD_LOGIC_VECTOR(31 downto 0);
-           WriteData : in  STD_LOGIC_VECTOR(31 downto 0);
-           MemWrite, MemRead : in  STD_LOGIC;
-           ReadData : out  STD_LOGIC_VECTOR(31 downto 0));
+    port (
+        clk           : in std_logic;
+        reset         : in std_logic;
+        Addr_in       : in std_logic_vector(31 downto 0);
+        WriteData_in  : in std_logic_vector(31 downto 0);
+        MemWrite_in   : in std_logic;
+        MemRead_in    : in std_logic;
+        ReadData_out  : out std_logic_vector(31 downto 0)
+    );
 end MEM_stage;
 
 architecture Behavioral of MEM_stage is
-    type RAM_TYPE is array (0 to 255) of STD_LOGIC_VECTOR(31 downto 0);
-    signal Data_Memory : RAM_TYPE := (others => (others => '0'));
-    signal read_data_internal : STD_LOGIC_VECTOR(31 downto 0);
+    -- Memory declaration
+    type memory_type is array (0 to 1023) of std_logic_vector(31 downto 0);
+    signal memory : memory_type := (others => (others => '0'));
+    signal addr : integer;
+
 begin
-    process(clk, reset)
+
+    -- Address conversion
+    process(Addr_in)
     begin
-        if reset = '1' then
-            Data_Memory <= (others => (others => '0'));
-        elsif rising_edge(clk) then
-            if MemWrite = '1' then
-                Data_Memory(to_integer(unsigned(Addr(31 downto 2)))) <= WriteData;
+        addr <= conv_integer(Addr_in(11 downto 2)); -- Assuming byte-addressable memory
+    end process;
+
+    -- Memory access process
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if MemWrite_in = '1' then
+                memory(addr) <= WriteData_in; -- Writing to memory
+            end if;
+
+            if MemRead_in = '1' then
+                ReadData_out <= memory(addr); -- Reading from memory
+            else
+                ReadData_out <= (others => '0'); -- Default value when not reading
             end if;
         end if;
     end process;
-    
-    process(MemRead, Addr)
-    begin
-        if MemRead = '1' then
-            read_data_internal <= Data_Memory(to_integer(unsigned(Addr(31 downto 2))));
-        else
-            read_data_internal <= (others => '0');
-        end if;
-    end process;
 
-    ReadData <= read_data_internal;
 end Behavioral;

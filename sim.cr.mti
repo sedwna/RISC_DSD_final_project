@@ -1,45 +1,32 @@
-C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
-Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity EX_stage
--- Compiling architecture Behavioral of EX_stage
-
-} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl}
-Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity MEM_stage
--- Compiling architecture Behavioral of MEM_stage
-
-} {} {}} C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
+{C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl}
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity Pipelined_RISCV
--- Compiling architecture Behavioral of Pipelined_RISCV
--- Loading package NUMERIC_STD
--- Loading entity IF_stage
--- Loading entity Pipeline_Registers
--- Loading entity ID_stage
+-- Compiling entity MEM_stage
+-- Compiling architecture Behavioral of MEM_stage
 
-} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl}
+} {} {}} C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl {0 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity IF_stage
--- Compiling architecture Behavioral of IF_stage
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity EX_stage
+-- Compiling architecture Behavioral of EX_stage
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl(54): (vcom-1581) No feasible entries for infix operator 'sll'.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl(54): Type error resolving infix expression "sll" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl(56): (vcom-1581) No feasible entries for infix operator 'srl'.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl(56): Type error resolving infix expression "srl" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl(58): (vcom-1581) No feasible entries for infix operator 'sra'.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl(58): Type error resolving infix expression "sra" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl(76): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+** Note: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl(87): VHDL Compiler exiting
 
-} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl}
+} {10.0 17.0} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl}
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -49,7 +36,20 @@ Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling entity WB_stage
 -- Compiling architecture Behavioral of WB_stage
 
-} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl}
+} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl} {0 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl}
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity IF_stage
+-- Compiling architecture Behavioral of IF_stage
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl(38): near "type": syntax error
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl(47): (vcom-1136) Unknown identifier "instruction_memory".
+** Note: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl(49): VHDL Compiler exiting
+
+} {10.0 12.0} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl}
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -60,16 +60,66 @@ Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling architecture Behavioral of tb_Pipelined_RISCV
 -- Loading entity Pipelined_RISCV
 
-} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl}
+} {} {}} C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl {0 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity RISC_V_Processor
+-- Compiling architecture Behavioral of RISC_V_Processor
+-- Loading entity IF_stage
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(30): (vcom-1484) Unknown formal identifier "PC_out".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(31): (vcom-1484) Unknown formal identifier "NextPC_out".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(32): (vcom-1484) Unknown formal identifier "Instruction_out".
+-- Loading entity ID_stage
+-- Loading entity EX_stage
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(57): Signal "ALUControl" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
 -- Loading package NUMERIC_STD
+-- Loading entity MEM_stage
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(67): (vcom-1484) Unknown formal identifier "Addr_in".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(68): (vcom-1484) Unknown formal identifier "WriteData_in".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(69): (vcom-1484) Unknown formal identifier "MemWrite_in".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(70): (vcom-1484) Unknown formal identifier "MemRead_in".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(71): (vcom-1484) Unknown formal identifier "ReadData_out".
+-- Loading entity WB_stage
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(77): (vcom-1484) Unknown formal identifier "clk".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(78): (vcom-1484) Unknown formal identifier "reset".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(79): (vcom-1484) Unknown formal identifier "MemToReg_in".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(80): (vcom-1484) Unknown formal identifier "ALUResult_in".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(81): (vcom-1484) Unknown formal identifier "ReadData_in".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(82): (vcom-1484) Unknown formal identifier "WriteData_out".
+** Error: (vcom-11) Could not find work.control_unit.
+** Error (suppressible): C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(86): (vcom-1195) Cannot find expanded name "work.Control_Unit".
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(86): Unknown expanded name.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(33): (vcom-1035) Formal port "PC_in" has OPEN or no actual associated with it.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(60): (vcom-1035) Formal port "ALUSrc_in" has OPEN or no actual associated with it.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(60): (vcom-1035) Formal port "ALUOp_in" has OPEN or no actual associated with it.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(72): (vcom-1035) Formal port "Addr" has OPEN or no actual associated with it.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(72): (vcom-1035) Formal port "WriteData" has OPEN or no actual associated with it.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(72): (vcom-1035) Formal port "MemWrite" has OPEN or no actual associated with it.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(72): (vcom-1035) Formal port "MemRead" has OPEN or no actual associated with it.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(83): (vcom-1035) Formal port "WriteData" has OPEN or no actual associated with it.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(83): (vcom-1035) Formal port "WriteReg" has OPEN or no actual associated with it.
+** Note: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl(96): VHDL Compiler exiting
+
+} {11.0 14.0 16.0 17.0 19.0 24.0 25.0 32.0 33.0 43.0} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl} {0 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl}
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity ID_stage
 -- Compiling architecture Behavioral of ID_stage
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl(66): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl(68): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl(70): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl(72): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+** Error: C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl(73): near ",": (vcom-1576) expecting => or '|' or '!'.
 
-} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl}
+} {10.0 15.0} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl}
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
