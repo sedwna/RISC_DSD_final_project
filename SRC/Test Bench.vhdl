@@ -1,16 +1,39 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
 
-entity tb_Pipelined_RISCV is
-end tb_Pipelined_RISCV;
+entity WB_stage_tb is
+end WB_stage_tb;
 
-architecture Behavioral of tb_Pipelined_RISCV is
-    signal clk : STD_LOGIC := '0';
-    signal reset : STD_LOGIC := '0';
+architecture Test of WB_stage_tb is
+
+    -- Signal declarations
+    signal clk          : std_logic := '0';
+    signal reset        : std_logic := '0';
+    signal MemToReg_in  : std_logic;
+    signal ALUResult_in : std_logic_vector(31 downto 0);
+    signal ReadData_in  : std_logic_vector(31 downto 0);
+    signal WriteReg_in  : std_logic_vector(4 downto 0);
+    signal RegWrite_in  : std_logic;
+    signal WriteData_out: std_logic_vector(31 downto 0);
+
+    -- Instantiate the Unit Under Test (UUT)
+    component WB_stage
+        port (
+            clk          : in std_logic;
+            reset        : in std_logic;
+            MemToReg_in  : in std_logic;
+            ALUResult_in : in std_logic_vector(31 downto 0);
+            ReadData_in  : in std_logic_vector(31 downto 0);
+            WriteReg_in  : in std_logic_vector(4 downto 0);
+            RegWrite_in  : in std_logic;
+            WriteData_out: out std_logic_vector(31 downto 0)
+        );
+    end component;
+
 begin
-    -- Clock generation
+    -- Clock process
     clk_process : process
     begin
         clk <= '0';
@@ -19,24 +42,57 @@ begin
         wait for 10 ns;
     end process;
 
-    -- Instantiate the Unit Under Test (UUT)
-    UUT : entity work.Pipelined_RISCV
-        Port map ( clk => clk, reset => reset);
+    -- Instantiate UUT
+    uut: WB_stage port map (
+        clk => clk,
+        reset => reset,
+        MemToReg_in => MemToReg_in,
+        ALUResult_in => ALUResult_in,
+        ReadData_in => ReadData_in,
+        WriteReg_in => WriteReg_in,
+        RegWrite_in => RegWrite_in,
+        WriteData_out => WriteData_out
+    );
 
-    -- Test procedure
-    stimulus : process
+    -- Test sequence
+    stimulus_process: process
     begin
-        -- Reset the system
+        -- Initialize inputs
         reset <= '1';
+        MemToReg_in <= '0';
+        ALUResult_in <= (others => '0');
+        ReadData_in <= (others => '0');
+        WriteReg_in <= (others => '0');
+        RegWrite_in <= '0';
         wait for 20 ns;
+
+        -- Deassert reset and apply first set of inputs
         reset <= '0';
-        
-        -- Add stimulus here
-        
-        -- Wait for sufficient time to observe the behavior
-        wait for 1000 ns;
-        
-        -- End simulation
+        MemToReg_in <= '0';
+        ALUResult_in <= x"0000000A"; -- 10 in hex
+        ReadData_in <= x"00000020";  -- 32 in hex
+        WriteReg_in <= "00001";      -- Register 1
+        RegWrite_in <= '1';
+        wait for 20 ns;
+
+        -- Test with MemToReg_in = 1 (write data from memory)
+        MemToReg_in <= '1';
+        wait for 20 ns;
+
+        -- Test with RegWrite_in = 0 (no write)
+        RegWrite_in <= '0';
+        wait for 20 ns;
+
+        -- Apply another set of values
+        MemToReg_in <= '0';
+        ALUResult_in <= x"0000000F"; -- 15 in hex
+        ReadData_in <= x"00000040";  -- 64 in hex
+        WriteReg_in <= "00010";      -- Register 2
+        RegWrite_in <= '1';
+        wait for 20 ns;
+
+        -- Stop simulation
         wait;
     end process;
-end Behavioral;
+
+end Test;

@@ -1,49 +1,45 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
 
-entity Pipeline_Registers is
-    Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           -- IF/ID
-           IF_ID_PC_in : in  STD_LOGIC_VECTOR(31 downto 0);
-           IF_ID_Instr_in : in  STD_LOGIC_VECTOR(31 downto 0);
-           IF_ID_PC_out : out  STD_LOGIC_VECTOR(31 downto 0);
-           IF_ID_Instr_out : out  STD_LOGIC_VECTOR(31 downto 0);
-           -- ID/EX
-           ID_EX_PC_in : in  STD_LOGIC_VECTOR(31 downto 0);
-           ID_EX_Instr_in : in  STD_LOGIC_VECTOR(31 downto 0);
-           ID_EX_PC_out : out  STD_LOGIC_VECTOR(31 downto 0);
-           ID_EX_Instr_out : out  STD_LOGIC_VECTOR(31 downto 0));
-end Pipeline_Registers;
+entity MEM_WB_register is
+    port (
+        clk           : in std_logic;
+        reset         : in std_logic;
+        -- Inputs from MEM stage
+        MemToReg_in   : in std_logic;
+        ALUResult_in  : in std_logic_vector(31 downto 0);
+        ReadData_in   : in std_logic_vector(31 downto 0);
+        WriteReg_in   : in std_logic_vector(4 downto 0);
+        RegWrite_in   : in std_logic;
+        -- Outputs to WB stage
+        MemToReg_out  : out std_logic;
+        ALUResult_out : out std_logic_vector(31 downto 0);
+        ReadData_out  : out std_logic_vector(31 downto 0);
+        WriteReg_out  : out std_logic_vector(4 downto 0);
+        RegWrite_out  : out std_logic
+    );
+end MEM_WB_register;
 
-architecture Behavioral of Pipeline_Registers is
-    signal IF_ID_PC_reg : STD_LOGIC_VECTOR(31 downto 0);
-    signal IF_ID_Instr_reg : STD_LOGIC_VECTOR(31 downto 0);
-    signal ID_EX_PC_reg : STD_LOGIC_VECTOR(31 downto 0);
-    signal ID_EX_Instr_reg : STD_LOGIC_VECTOR(31 downto 0);
+architecture Behavioral of MEM_WB_register is
 begin
-    process(clk, reset)
+    process (clk, reset)
     begin
         if reset = '1' then
-            IF_ID_PC_reg <= (others => '0');
-            IF_ID_Instr_reg <= (others => '0');
-            ID_EX_PC_reg <= (others => '0');
-            ID_EX_Instr_reg <= (others => '0');
+            -- Initialize outputs to default values on reset
+            MemToReg_out <= '0';
+            ALUResult_out <= (others => '0');
+            ReadData_out <= (others => '0');
+            WriteReg_out <= (others => '0');
+            RegWrite_out <= '0';
         elsif rising_edge(clk) then
-            -- IF/ID Pipeline Register
-            IF_ID_PC_reg <= IF_ID_PC_in;
-            IF_ID_Instr_reg <= IF_ID_Instr_in;
-            -- ID/EX Pipeline Register
-            ID_EX_PC_reg <= ID_EX_PC_in;
-            ID_EX_Instr_reg <= ID_EX_Instr_in;
+            -- Pass through the data from inputs to outputs on clock edge
+            MemToReg_out <= MemToReg_in;
+            ALUResult_out <= ALUResult_in;
+            ReadData_out <= ReadData_in;
+            WriteReg_out <= WriteReg_in;
+            RegWrite_out <= RegWrite_in;
         end if;
     end process;
-
-    -- Output signals
-    IF_ID_PC_out <= IF_ID_PC_reg;
-    IF_ID_Instr_out <= IF_ID_Instr_reg;
-    ID_EX_PC_out <= ID_EX_PC_reg;
-    ID_EX_Instr_out <= ID_EX_Instr_reg;
 end Behavioral;

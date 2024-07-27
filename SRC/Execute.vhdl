@@ -1,87 +1,42 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all; -- Essential for signed and unsigned operations
 
 entity EX_stage is
     port (
-        clk           : in std_logic;
-        reset         : in std_logic;
-        ALUControl_in : in std_logic_vector(3 downto 0);
-        ALUSrc_in     : in std_logic;
-        ALUOp_in      : in std_logic_vector(31 downto 0);
-        ReadData1_in  : in std_logic_vector(31 downto 0);
-        ReadData2_in  : in std_logic_vector(31 downto 0);
-        ImmExt_in     : in std_logic_vector(31 downto 0);
-        ALUResult_out : out std_logic_vector(31 downto 0);
-        Zero_out      : out std_logic
+        -- Control signals
+        ALUControl : in std_logic_vector(3 downto 0);
+        -- Data inputs
+        A          : in std_logic_vector(31 downto 0);
+        B          : in std_logic_vector(31 downto 0);
+        -- Output
+        Result     : out std_logic_vector(31 downto 0)
     );
 end EX_stage;
 
 architecture Behavioral of EX_stage is
-
-    signal ALUInput2 : std_logic_vector(31 downto 0);
-    signal ALUResult : std_logic_vector(31 downto 0);
-    signal Zero      : std_logic;
-
 begin
-
-    -- ALU Input Selection
-    process(ALUSrc_in, ReadData2_in, ImmExt_in)
+    process (ALUControl, A, B)
     begin
-        if ALUSrc_in = '1' then
-            ALUInput2 <= ImmExt_in;  -- Use immediate value
-        else
-            ALUInput2 <= ReadData2_in;  -- Use register value
-        end if;
-    end process;
-
-    -- ALU Operations
-    process(ALUControl_in, ReadData1_in, ALUInput2)
-    begin
-        case ALUControl_in is
-            when "0000" =>  -- Addition
-                ALUResult <= ReadData1_in + ALUInput2;
-            when "0001" =>  -- Subtraction
-                ALUResult <= ReadData1_in - ALUInput2;
-            when "0010" =>  -- Logical AND
-                ALUResult <= ReadData1_in and ALUInput2;
-            when "0011" =>  -- Logical OR
-                ALUResult <= ReadData1_in or ALUInput2;
-            when "0100" =>  -- Logical XOR
-                ALUResult <= ReadData1_in xor ALUInput2;
-            when "0101" =>  -- Logical shift left
-                ALUResult <= ReadData1_in sll conv_integer(ALUInput2(4 downto 0));
-            when "0110" =>  -- Logical shift right
-                ALUResult <= ReadData1_in srl conv_integer(ALUInput2(4 downto 0));
-            when "0111" =>  -- Arithmetic shift right
-                ALUResult <= ReadData1_in sra conv_integer(ALUInput2(4 downto 0));
-            when "1000" =>  -- Set less than
-                if ReadData1_in < ALUInput2 then
-                    ALUResult <= (others => '1');
-                else
-                    ALUResult <= (others => '0');
-                end if;
-            when "1001" =>  -- Set less than unsigned
-                if unsigned(ReadData1_in) < unsigned(ALUInput2) then
-                    ALUResult <= (others => '1');
-                else
-                    ALUResult <= (others => '0');
-                end if;
+        case ALUControl is
+            when "0000" => -- ADD
+                Result <= std_logic_vector(signed(A) + signed(B));
+            when "0001" => -- SUB
+                Result <= std_logic_vector(signed(A) - signed(B));
+            when "0010" => -- AND
+                Result <= A and B;
+            when "0011" => -- OR
+                Result <= A or B;
+            when "0100" => -- XOR
+                Result <= A xor B;
+            when "1000" => -- Shift Left Logical (sll)
+                Result <= std_logic_vector(shift_left(unsigned(A), to_integer(unsigned(B(4 downto 0)))));
+            when "1001" => -- Shift Right Logical (srl)
+                Result <= std_logic_vector(shift_right(unsigned(A), to_integer(unsigned(B(4 downto 0)))));
+            when "1010" => -- Shift Right Arithmetic (sra)
+                Result <= std_logic_vector(shift_right(signed(A), to_integer(unsigned(B(4 downto 0)))));
             when others =>
-                ALUResult <= (others => '0');  -- Default case
+                Result <= (others => '0');
         end case;
-
-        -- Set the Zero flag
-        if ALUResult = (others => '0') then
-            Zero <= '1';
-        else
-            Zero <= '0';
-        end if;
     end process;
-
-    -- Output assignments
-    ALUResult_out <= ALUResult;
-    Zero_out <= Zero;
-
 end Behavioral;
