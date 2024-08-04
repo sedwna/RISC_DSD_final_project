@@ -17,22 +17,20 @@ begin
     process (ALUControl, A, B)
     begin
         case ALUControl is
-            when "0000" => -- ADD
+            when "0000" => 
                 Result <= std_logic_vector(signed(A) + signed(B));
-            when "0001" => -- SUB
+            when "0001" => 
                 Result <= std_logic_vector(signed(A) - signed(B));
-            when "0010" => -- AND
+            when "0010" => 
                 Result <= A and B;
-            when "0011" => -- OR
+            when "0011" => 
                 Result <= A or B;
-            when "0100" => -- XOR
+            when "0100" => 
                 Result <= A xor B;
-            when "1000" => -- Shift Left Logical (sll)
+            when "1000" => -- Shift Left Logical 
                 Result <= std_logic_vector(shift_left(unsigned(A), to_integer(unsigned(B(4 downto 0)))));
-            when "1001" => -- Shift Right Logical (srl)
+            when "1001" => -- Shift Right Logical
                 Result <= std_logic_vector(shift_right(unsigned(A), to_integer(unsigned(B(4 downto 0)))));
-            when "1010" => -- Shift Right Arithmetic (sra)
-                Result <= std_logic_vector(shift_right(signed(A), to_integer(unsigned(B(4 downto 0)))));
             when others =>
                 Result <= (others => '0');
         end case;
