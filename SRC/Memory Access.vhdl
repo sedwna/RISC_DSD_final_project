@@ -16,33 +16,35 @@ entity MEM_stage is
 end MEM_stage;
 
 architecture Behavioral of MEM_stage is
-    -- Memory declaration
     type memory_type is array (0 to 1023) of std_logic_vector(31 downto 0);
     signal memory : memory_type := (others => (others => '0'));
     signal addr : integer;
 
 begin
 
-    -- Address conversion
+
     process(Addr_in)
     begin
-        addr <= conv_integer(Addr_in(11 downto 2)); -- Assuming byte-addressable memory
+        addr <= conv_integer(Addr_in(11 downto 2)); 
     end process;
 
-    -- Memory access process
+
     process(clk)
     begin
         if rising_edge(clk) then
             if MemWrite_in = '1' then
-                memory(addr) <= WriteData_in; -- Writing to memory
+                memory(addr) <= WriteData_in;
             end if;
 
             if MemRead_in = '1' then
-                ReadData_out <= memory(addr); -- Reading from memory
+                ReadData_out <= memory(addr); 
             else
-                ReadData_out <= (others => '0'); -- Default value when not reading
+                ReadData_out <= (others => '0');
             end if;
         end if;
     end process;
 
 end Behavioral;
+
+-- 40012358013
+-- 40012358014

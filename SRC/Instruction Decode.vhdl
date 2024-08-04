@@ -24,33 +24,33 @@ begin
     begin
         case Instruction(31 downto 26) is
             when "000000" => -- R-type
-                ReadData1_out <= (others => '0'); -- Placeholder
-                ReadData2_out <= (others => '0'); -- Placeholder
+                ReadData1_out <= (others => '0'); 
+                ReadData2_out <= (others => '0'); 
                 Immediate_out <= (others => '0');
                 RegDst_out <= '1';
-                ALUOp_out <= "0010"; -- ADD operation
+                ALUOp_out <= "0010"; 
                 ALUSrc_out <= '0';
                 RegWrite_out <= '1';
                 MemRead_out <= '0';
                 MemWrite_out <= '0';
                 MemToReg_out <= '0';
             when "100011" => -- LW
-                ReadData1_out <= (others => '0'); -- Placeholder
-                ReadData2_out <= (others => '0'); -- Placeholder
+                ReadData1_out <= (others => '0'); 
+                ReadData2_out <= (others => '0'); 
                 Immediate_out <= Instruction(15 downto 0) & "0000000000000000";
                 RegDst_out <= '0';
-                ALUOp_out <= "0000"; -- ADD operation
+                ALUOp_out <= "0000"; 
                 ALUSrc_out <= '1';
                 RegWrite_out <= '1';
                 MemRead_out <= '1';
                 MemWrite_out <= '0';
                 MemToReg_out <= '1';
             when "101011" => -- SW
-                ReadData1_out <= (others => '0'); -- Placeholder
-                ReadData2_out <= (others => '0'); -- Placeholder
+                ReadData1_out <= (others => '0'); 
+                ReadData2_out <= (others => '0'); 
                 Immediate_out <= Instruction(15 downto 0) & "0000000000000000";
                 RegDst_out <= '0';
-                ALUOp_out <= "0000"; -- ADD operation
+                ALUOp_out <= "0000"; 
                 ALUSrc_out <= '1';
                 RegWrite_out <= '0';
                 MemRead_out <= '0';
@@ -70,3 +70,6 @@ begin
         end case;
     end process;
 end Behavioral;
+
+-- 40012358013
+-- 40012358014

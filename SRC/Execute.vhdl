@@ -1,15 +1,13 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all; -- Essential for signed and unsigned operations
+use ieee.numeric_std.all;
 
 entity EX_stage is
     port (
-        -- Control signals
+
         ALUControl : in std_logic_vector(3 downto 0);
-        -- Data inputs
         A          : in std_logic_vector(31 downto 0);
         B          : in std_logic_vector(31 downto 0);
-        -- Output
         Result     : out std_logic_vector(31 downto 0)
     );
 end EX_stage;
@@ -40,3 +38,6 @@ begin
         end case;
     end process;
 end Behavioral;
+
+-- 40012358013
+-- 40012358014

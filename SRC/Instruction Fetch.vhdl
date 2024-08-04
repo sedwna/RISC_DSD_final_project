@@ -14,13 +14,12 @@ entity IF_stage is
 end IF_stage;
 
 architecture Behavioral of IF_stage is
-    -- Assume a memory array for instructions
     type memory_array is array (0 to 1023) of std_logic_vector(31 downto 0);
     signal instruction_memory : memory_array := (
-        0 => x"00000000", -- Example instruction
+        0 => x"00000000", 
         1 => x"00000000",
         2 => x"00000000",
-        -- Add more instructions as needed
+
         others => (others => '0')
     );
 
@@ -39,3 +38,6 @@ begin
     Instr_out <= instruction_memory(to_integer(unsigned(PC_reg(11 downto 2))));
 
 end Behavioral;
+
+-- 40012358013
+-- 40012358014

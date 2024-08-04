@@ -6,13 +6,12 @@ entity Integration is
     port (
         clk         : in  std_logic;
         reset       : in  std_logic
-        -- Define other global inputs/outputs as needed
     );
 end Integration;
 
 architecture Behavioral of Integration is
 
-    -- Signals for inter-stage communication
+
     signal PC_in, PC_out, NextPC_out    : std_logic_vector(31 downto 0);
     signal Instruction_in, Instruction_out : std_logic_vector(31 downto 0);
     signal ImmExt_out, ReadData1, ReadData2 : std_logic_vector(31 downto 0);
@@ -21,9 +20,9 @@ architecture Behavioral of Integration is
     signal WriteReg_in, WriteReg_out, WriteReg_WB : std_logic_vector(4 downto 0);
     signal RegWrite_in, ALUSrc_in, MemWrite_in, MemRead_in : std_logic;
     signal ALUControl_in : std_logic_vector(3 downto 0);
-    signal WriteData_WB : std_logic_vector(31 downto 0); -- Added signal declaration
+    signal WriteData_WB : std_logic_vector(31 downto 0); 
 
-    -- Component declarations
+
     component IF_stage
         port (
             clk        : in  std_logic;
@@ -97,7 +96,7 @@ architecture Behavioral of Integration is
 
 begin
 
-    -- Instantiate the IF stage
+
     IF_stage_inst : IF_stage
         port map (
             clk        => clk,
@@ -107,7 +106,7 @@ begin
             Instr_out  => Instruction_out
         );
 
-    -- Instantiate the ID stage
+
     ID_stage_inst : ID_stage
         port map (
             clk           => clk,
@@ -125,7 +124,7 @@ begin
             MemToReg_out  => MemToReg_WB
         );
 
-    -- Instantiate the EX stage
+
     EX_stage_inst : EX_stage
         port map (
             clk           => clk,
@@ -139,7 +138,7 @@ begin
             Zero_out      => Zero_out
         );
 
-    -- Instantiate the MEM stage
+
     MEM_stage_inst : MEM_stage
         port map (
             clk           => clk,
@@ -153,7 +152,7 @@ begin
             ReadData_MEM  => ReadData_MEM
         );
 
-    -- Instantiate the WB stage
+
     WB_stage_inst : WB_stage
         port map (
             clk           => clk,
@@ -165,7 +164,10 @@ begin
             RegWrite_in   => RegWrite_in,
             WriteReg_out  => WriteReg_WB,
             RegWrite_out  => RegWrite_WB,
-            WriteData_out => WriteData_WB -- Use the declared signal
+            WriteData_out => WriteData_WB 
         );
 
 end Behavioral;
+
+-- 40012358013
+-- 40012358014

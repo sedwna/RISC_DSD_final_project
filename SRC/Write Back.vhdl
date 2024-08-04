@@ -21,15 +21,18 @@ begin
     process(clk, reset)
     begin
         if reset = '1' then
-            WriteData_out <= (others => '0'); -- Reset output data
+            WriteData_out <= (others => '0');
         elsif rising_edge(clk) then
             if RegWrite_in = '1' then
                 if MemToReg_in = '1' then
-                    WriteData_out <= ReadData_in; -- Data from memory
+                    WriteData_out <= ReadData_in;
                 else
-                    WriteData_out <= ALUResult_in; -- ALU result
+                    WriteData_out <= ALUResult_in; 
                 end if;
             end if;
         end if;
     end process;
 end Behavioral;
+
+-- 40012358013
+-- 40012358014

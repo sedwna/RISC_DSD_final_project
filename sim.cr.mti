@@ -1,13 +1,4 @@
-C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
-Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity EX_stage
--- Compiling architecture Behavioral of EX_stage
-
-} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl}
+{C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl}
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -17,14 +8,14 @@ Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling entity MEM_stage
 -- Compiling architecture Behavioral of MEM_stage
 
-} {} {}} C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
+} {} {}} C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity Integration
--- Compiling architecture Behavioral of Integration
+-- Compiling entity EX_stage
+-- Compiling architecture Behavioral of EX_stage
 
 } {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl}
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
@@ -33,8 +24,27 @@ Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity WB_stage_tb
--- Compiling architecture Test of WB_stage_tb
+-- Compiling entity tb
+-- Compiling architecture Test of tb
+
+} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl}
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity WB_stage
+-- Compiling architecture Behavioral of WB_stage
+
+} {} {}} C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Integration
+-- Compiling architecture Behavioral of Integration
 
 } {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl}
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
@@ -46,16 +56,6 @@ Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package NUMERIC_STD
 -- Compiling entity IF_stage
 -- Compiling architecture Behavioral of IF_stage
-
-} {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl}
-Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity WB_stage
--- Compiling architecture Behavioral of WB_stage
 
 } {} {}} {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl}
 Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020

@@ -8,654 +8,369 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/priso/OneDrive/Desktop/vhdl_code/_prj/Multiplier_4_bit
+dC:/modeltech64_2020.4/examples
 T_opt
-!s110 1721325133
-V6c6k=i_LdE<Wh`JIDE0mN3
-04 13 10 work tb_risc_v_cpu behavioral 1
-=1-7c10c9281572-6699564d-2ef-4404
-Z1 o-quiet -auto_acc_if_foreign -work work
-Z2 tCvgOpt 0
+!s110 1722744412
+V]A<0lZOjb7kS6RjG0Q2Im1
+04 2 4 work tb test 1
+=1-7c10c9281572-66aefe5c-1f2-67b8
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
 n@_opt
-Z3 OL;O;2020.4;71
-R0
-T_opt1
-!s110 1721583528
-VV4jM0NEk4o49MohN4cmJ[0
-04 18 10 work tb_pipelined_riscv behavioral 1
-=1-7c10c9281572-669d47a7-2ed-4308
-R1
-R2
-n@_opt1
-R3
-R0
+OL;O;2020.4;71
 Eex_stage
-Z4 w1722068527
-Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 326
-Z8 dC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project
-Z9 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
-Z10 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
+Z0 w1722718495
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 8
+Z4 dC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project
+Z5 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
+Z6 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl
 l0
 L5 1
-V36[;R`MU7Oh6COga_Lil62
-!s100 mad5NLS`HD^_l62J86Rd]0
-Z11 OL;C;2020.4;71
+V4>lg5=lWI<ez<ia`jo31?3
+!s100 hniQke]>06AM:>;`Sd^:02
+Z7 OL;C;2020.4;71
 32
-Z12 !s110 1722068960
+Z8 !s110 1722744384
 !i10b 1
-Z13 !s108 1722068960.000000
-Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl|
-Z15 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl|
+Z9 !s108 1722744384.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl|
+Z11 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Execute.vhdl|
 !i113 0
-Z16 o-work work -2002 -explicit
-Z17 tExplicit 1 CvgOpt 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
 Abehavioral
-R5
-R6
+R1
+R2
+R3
+DEx4 work 8 ex_stage 0 22 4>lg5=lWI<ez<ia`jo31?3
+!i122 8
+l16
+L15 26
+V4I3:XRCP0f0eTP<l6o^F41
+!s100 ckGP`HGB>DBVA<EcoI78M3
 R7
-DEx4 work 8 ex_stage 0 22 36[;R`MU7Oh6COga_Lil62
-!i122 326
-l18
-L17 26
-V]ohigDKc4EFVJH;FJ9b_i0
-!s100 BR]m`FMgOb]FZ_OBglzcM3
-R11
 32
-R12
-!i10b 1
-R13
-R14
-R15
-!i113 0
-R16
-R17
-Eid_stage
-Z18 w1722068591
-R5
-R6
-R7
-!i122 327
 R8
-Z19 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl
-Z20 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eid_stage
+Z14 w1722718589
+R1
+R2
+R3
+!i122 9
+R4
+Z15 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl
+Z16 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl
 l0
 L5 1
 V^4[ImlO=oJ;]WzOibb:H71
 !s100 eC^SgEVo8?j43Xho;9k0h2
-R11
-32
-R12
-!i10b 1
-R13
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl|
-Z22 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl|
-!i113 0
-R16
-R17
-Abehavioral
-R5
-R6
 R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl|
+Z18 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Decode.vhdl|
+!i113 0
+R12
+R13
+Abehavioral
+R1
+R2
+R3
 DEx4 work 8 id_stage 0 22 ^4[ImlO=oJ;]WzOibb:H71
-!i122 327
+!i122 9
 l22
 L21 52
 VL>EYLoX7:i8FMPH3`T>?a1
 !s100 mO;ERSGSV;WM0YVe;m<o63
-R11
-32
-R12
-!i10b 1
-R13
-R21
-R22
-!i113 0
-R16
-R17
-Eif_stage
-Z23 w1722068638
-R5
-Z24 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z25 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-R6
 R7
-!i122 328
+32
 R8
-Z26 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl
-Z27 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13
+Eif_stage
+Z19 w1722718597
+R1
+Z20 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z21 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 10
+R4
+Z22 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl
+Z23 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl
 l0
 L6 1
 V=S3R[R3^]7Pg?>ID3nD9D3
 !s100 58dGN=:m6HPUH:D8iOYPA2
-R11
+R7
 32
-R12
+R8
 !i10b 1
-R13
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl|
-Z29 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl|
+R9
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl|
+Z25 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Instruction Fetch.vhdl|
 !i113 0
-R16
-R17
+R12
+R13
 Abehavioral
-R5
+R1
+R20
+R21
+R2
+R3
+DEx4 work 8 if_stage 0 22 =S3R[R3^]7Pg?>ID3nD9D3
+!i122 10
+l27
+L16 25
+VOV^3^XHEFakXAE[IMSo4h2
+!s100 PPSmgRHdEb@JF:>I2^Hb21
+R7
+32
+R8
+!i10b 1
+R9
 R24
 R25
-R6
-R7
-DEx4 work 8 if_stage 0 22 =S3R[R3^]7Pg?>ID3nD9D3
-!i122 328
-l28
-L16 26
-VBcMLFbWLC6Mh5UMY;B>@Q2
-!s100 >iV_O@bl?iF5VCW;gSj030
-R11
-32
-R12
-!i10b 1
-R13
-R28
-R29
 !i113 0
-R16
-R17
+R12
+R13
 Eintegration
-Z30 w1722068955
-R5
-R6
-R7
-!i122 329
-R8
-Z31 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
-Z32 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
+Z26 w1722718617
+R1
+R2
+R3
+!i122 11
+R4
+Z27 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
+Z28 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl
 l0
 L5 1
-VeE[a3fWjjDTUIJZReK[:P1
-!s100 mDXTo]UXC1JIGjG7IJLQ:0
-R11
+ValnCl58Td^HQHITRI5WUK0
+!s100 <[kYVCZFNL[Rif<Ue@o9L1
+R7
 32
-R12
+Z29 !s110 1722744385
 !i10b 1
-R13
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl|
-Z34 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl|
+R9
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl|
+Z31 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Integration.vhdl|
 !i113 0
-R16
-R17
+R12
+R13
 Abehavioral
-R5
-R6
+R1
+R2
+R3
+DEx4 work 11 integration 0 22 alnCl58Td^HQHITRI5WUK0
+!i122 11
+l97
+L12 159
+VB0o0BlCEIKGj?KTL0ZlaZ2
+!s100 kCg1DcnJc^>?:DGiQ<U8A0
 R7
-DEx4 work 11 integration 0 22 eE[a3fWjjDTUIJZReK[:P1
-!i122 329
-l98
-L13 159
-V4ZllzMW>S@N73?7HUf6zn3
-!s100 F[l5DcGj1Lf?^hBCOUe;U3
-R11
 32
-R12
+R29
 !i10b 1
-R13
-R33
-R34
+R9
+R30
+R31
 !i113 0
-R16
-R17
+R12
+R13
 Emem_stage
-Z35 w1721897478
-R24
-R25
-R6
-R7
-!i122 330
-R8
-Z36 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl
-Z37 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl
+Z32 w1722718625
+R20
+R21
+R2
+R3
+!i122 12
+R4
+Z33 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl
+Z34 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl
 l0
 L6 1
 V:IBPi8eh@FX^bNZiAnRS_3
 !s100 <?@:]hkh4<CPb:4PI9@7;2
-R11
+R7
 32
-R12
+R29
 !i10b 1
-R13
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl|
-Z39 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl|
+Z35 !s108 1722744385.000000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl|
+Z37 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Memory Access.vhdl|
 !i113 0
-R16
-R17
+R12
+R13
 Abehavioral
-R24
-R25
-R6
-R7
+R20
+R21
+R2
+R3
 DEx4 work 9 mem_stage 0 22 :IBPi8eh@FX^bNZiAnRS_3
-!i122 330
-l24
-L18 31
-Vfk]f`CJ2>J@kI<zYkkW_^2
-!s100 5GTB1Xm5<D9^lkHDWAo>73
-R11
-32
-R12
-!i10b 1
-R13
-R38
-R39
-!i113 0
-R16
-R17
-Emem_wb_register
-Z40 w1722068182
-R24
-R25
-R6
+!i122 12
+l23
+L18 30
+VgR47ehc^Y<4aWU;][U<OO0
+!s100 7@Zne5c^2khkd3M;d98ci3
 R7
-!i122 331
-R8
-Z41 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl
-Z42 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl
+32
+R29
+!i10b 1
+R35
+R36
+R37
+!i113 0
+R12
+R13
+Emem_wb_register
+Z38 w1722718633
+R20
+R21
+R2
+R3
+!i122 13
+R4
+Z39 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl
+Z40 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl
 l0
 L6 1
 VB^[dheXOTBY7L`09@I3PN0
 !s100 dC`V:7f2KL6acI[f<HcdP0
-R11
-32
-R12
-!i10b 1
-R13
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl|
-Z44 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl|
-!i113 0
-R16
-R17
-Abehavioral
-R24
-R25
-R6
 R7
+32
+R29
+!i10b 1
+R35
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl|
+Z42 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Pipeline Registers.vhdl|
+!i113 0
+R12
+R13
+Abehavioral
+R20
+R21
+R2
+R3
 DEx4 work 15 mem_wb_register 0 22 B^[dheXOTBY7L`09@I3PN0
-!i122 331
+!i122 13
 l26
 L25 21
 V:>hnUMl6fX4Ha;ShSNVnJ3
 !s100 C5hdgj[e5QO0ibGa[7fGg2
-R11
-32
-R12
-!i10b 1
-R13
-R43
-R44
-!i113 0
-R16
-R17
-Epipeline_processor
-w1722068381
-R24
-R25
-R6
 R7
-!i122 306
-R8
-R31
-R32
-l0
-L6 1
-Vg[7zT=?H;KFH@0@A683E]0
-!s100 e^6hgAffQL:zA93>85O=J2
-R11
 32
-!s110 1722068641
+R29
 !i10b 1
-!s108 1722068641.000000
-R33
-R34
-!i113 0
-R16
-R17
-Epipeline_registers
-Z45 w1721582704
-R25
-R24
-R6
-R7
-!i122 253
-R8
+R35
 R41
 R42
+!i113 0
+R12
+R13
+Etb
+Z43 w1722744369
+R20
+R21
+R2
+R3
+!i122 14
+R4
+Z44 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl
+Z45 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl
 l0
 L6 1
-V=8FY?E7_8gcNDMjb^EJ0j0
-!s100 =k=Kf?cCkM7ZC_bbXzHS=3
-R11
-32
-Z46 !s110 1721897561
-!i10b 1
-Z47 !s108 1721897561.000000
-R43
-R44
-!i113 0
-R16
-R17
-Abehavioral
-R25
-R24
-R6
+V8A2SFSXDN_E2Tb7OCA=1a3
+!s100 7Y7lJm8nBaodeUUhlLKQA0
 R7
-Z48 DEx4 work 18 pipeline_registers 0 22 =8FY?E7_8gcNDMjb^EJ0j0
-!i122 253
-l26
-L21 29
-VZk2ZK>0Q0zP466[;f^4LV0
-!s100 X4?Zk_eXfB?9G]QiESlB30
-R11
 32
+R29
+!i10b 1
+R35
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl|
+Z47 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl|
+!i113 0
+R12
+R13
+Atest
+R20
+R21
+R2
+R3
+DEx4 work 2 tb 0 22 8A2SFSXDN_E2Tb7OCA=1a3
+!i122 14
+l35
+L9 90
+VGHhfeBcE7ED4QdJZ`2agi3
+!s100 [IiGZFI1I9K[KDWXJg<aR2
+R7
+32
+R29
+!i10b 1
+R35
 R46
-!i10b 1
 R47
-R43
-R44
 !i113 0
-R16
-R17
-Epipelined_riscv
-Z49 w1721586599
-R25
-R24
-R6
-R7
-!i122 211
-R8
-R31
-R32
-l0
-L6 1
-V9R=M[8`;>makJ@h@YGZz]3
-!s100 0kmCKc<gAke0dKNdjH?Ph2
-R11
-32
-Z50 !s110 1721586616
-!i10b 1
-Z51 !s108 1721586616.000000
-R33
-R34
-!i113 0
-R16
-R17
-Abehavioral
-DEx4 work 8 id_stage 0 22 YYGFBB5^gODM89lE]8f]H2
-R48
-R5
-DEx4 work 8 if_stage 0 22 ee[zJUoY8<SGC:EgIPA`F2
-R25
-R24
-R6
-R7
-Z52 DEx4 work 15 pipelined_riscv 0 22 9R=M[8`;>makJ@h@YGZz]3
-!i122 211
-l16
-L11 28
-VeDJ`]kX<]Oz?QJa1?=h?o3
-!s100 f^NBMZX:CM_P2UTk1jeE@0
-R11
-32
-R50
-!i10b 1
-R51
-R33
-R34
-!i113 0
-R16
-R17
-Erisc_v_cpu
-Z53 w1721324407
-R25
-R24
-R6
-R7
-!i122 92
-R8
-R31
-R32
-l0
-L6 1
-Vl^leTC@2ajeCL8cS=jnnn1
-!s100 OSA7>]bVk8SkV=SJi;K^V3
-R11
-32
-Z54 !s110 1721325124
-!i10b 1
-Z55 !s108 1721325124.000000
-R33
-R34
-!i113 0
-R16
-R17
-Abehavioral
-R25
-R24
-R6
-R7
-DEx4 work 10 risc_v_cpu 0 22 l^leTC@2ajeCL8cS=jnnn1
-!i122 92
-l53
-L11 49
-VJXAZe=B^VaSMFe[G5B@AL1
-!s100 Kmjf[gFz;6VWmj8_hAWBk1
-R11
-32
-R54
-!i10b 1
-R55
-R33
-R34
-!i113 0
-R16
-R17
-Erisc_v_processor
-w1721896897
-R25
-R24
-R6
-R7
-!i122 251
-R8
-R31
-R32
-l0
-L6 1
-Vd<HBeon`PE0E[R1`Yl21h2
-!s100 U;?_MCOibRJBK:l8GLXDV2
-R11
-32
-R46
-!i10b 1
-R47
-R33
-R34
-!i113 0
-R16
-R17
-Etb_pipelined_riscv
-Z56 w1721582723
-R25
-R24
-R6
-R7
-!i122 254
-R8
-Z57 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl
-Z58 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl
-l0
-L6 1
-V0I0E;dCoVO^>88GITZ`Ab0
-!s100 i7cj;lHZi]FO99l0g@ONl1
-R11
-32
-R46
-!i10b 1
-R47
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl|
-Z60 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Test Bench.vhdl|
-!i113 0
-R16
-R17
-Abehavioral
-R52
-R25
-R24
-R6
-R7
-DEx4 work 18 tb_pipelined_riscv 0 22 0I0E;dCoVO^>88GITZ`Ab0
-!i122 254
-l12
-L9 34
-Vh@<SoY>cna5lXGXZAZ?nE0
-!s100 eAPcU0oHMP71>bO8eCb^T2
-R11
-32
-R46
-!i10b 1
-R47
-R59
-R60
-!i113 0
-R16
-R17
-Etb_risc_v_cpu
-Z61 w1721325115
-R6
-R7
-!i122 94
-R8
-R57
-R58
-l0
-L4 1
-VJ>VI5hX?CecgNlP[d5NAV3
-!s100 B?8[==F1IYizn<NbY2U0b0
-R11
-32
-R54
-!i10b 1
-R55
-R59
-R60
-!i113 0
-R16
-R17
-Abehavioral
-R6
-R7
-DEx4 work 13 tb_risc_v_cpu 0 22 J>VI5hX?CecgNlP[d5NAV3
-!i122 94
-l20
-L7 44
-VnU9l:HRVZLdi^mX024eBc0
-!s100 ;Igme7eN5PTNGgBH];P^>2
-R11
-32
-R54
-!i10b 1
-R55
-R59
-R60
-!i113 0
-R16
-R17
+R12
+R13
 Ewb_stage
-Z62 w1721897546
-R24
-R25
-R6
-R7
-!i122 333
-R8
-Z63 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl
-Z64 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl
+Z48 w1722718644
+R20
+R21
+R2
+R3
+!i122 15
+R4
+Z49 8C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl
+Z50 FC:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl
 l0
 L6 1
 VmIaA]4oj>JF@@BB;oD`jE0
 !s100 >o`XdAT2T1K87C0Nj><M>0
-R11
+R7
 32
-R12
+R29
 !i10b 1
-R13
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl|
-Z66 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl|
+R35
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl|
+Z52 !s107 C:/Users/priso/OneDrive/Desktop/RISC_DSD_final_project/SRC/Write Back.vhdl|
 !i113 0
-R16
-R17
+R12
+R13
 Abehavioral
-R24
-R25
-R6
-R7
-Z67 DEx4 work 8 wb_stage 0 22 mIaA]4oj>JF@@BB;oD`jE0
-!i122 333
+R20
+R21
+R2
+R3
+DEx4 work 8 wb_stage 0 22 mIaA]4oj>JF@@BB;oD`jE0
+!i122 15
 l20
-Z68 L19 17
-Z69 VMe7B]PXFbDA@fB4DSBRmn0
-Z70 !s100 ILzR0ZQQ:z;JcOz?kVAYb1
-R11
-32
-R12
-!i10b 1
-R13
-R65
-R66
-!i113 0
-R16
-R17
-Ewb_stage_tb
-Z71 w1722068128
-R24
-R25
-R6
+L19 17
+VMe7B]PXFbDA@fB4DSBRmn0
+!s100 ILzR0ZQQ:z;JcOz?kVAYb1
 R7
-!i122 332
-R8
-R57
-R58
-l0
-L6 1
-VIfdcLZZ^Zh[ghFQJ`jY8k3
-!s100 XLbVm[5<=;Z7^aJT14Y:L3
-R11
 32
-R12
+R29
 !i10b 1
-R13
-R59
-R60
+R35
+R51
+R52
 !i113 0
-R16
-R17
-Atest
-R24
-R25
-R6
-R7
-DEx4 work 11 wb_stage_tb 0 22 IfdcLZZ^Zh[ghFQJ`jY8k3
-!i122 332
-l35
-L9 90
-VB;WkjCXc1`<16l7I`E7lT2
-!s100 _8^XTjI[@GzTV7l]LPehG2
-R11
-32
 R12
-!i10b 1
 R13
-R59
-R60
-!i113 0
-R16
-R17

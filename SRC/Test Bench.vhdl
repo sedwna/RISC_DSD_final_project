@@ -3,10 +3,10 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 
-entity WB_stage_tb is
-end WB_stage_tb;
+entity tb is
+end tb;
 
-architecture Test of WB_stage_tb is
+architecture Test of tb is
 
     -- Signal declarations
     signal clk          : std_logic := '0';
